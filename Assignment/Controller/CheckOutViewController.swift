@@ -41,6 +41,11 @@ class CheckOutViewController: UIViewController, UITextFieldDelegate{
         let movie = Movie(name: getName, description: getDes)
         let booking = Booking(movie: movie,location: getLocation,time: getTime,price: total.text!,noAdult: Int(adult.text!)!,noStudent: Int(student.text!)!,noChild: Int(children.text!)!)
         Booking.bookings.append(booking)
+        
+      
+        Model.sharedInstance.saveBooking(booking_name: "getName", booking_location: "getLocation", booking_time: "getTime", booking_price: total.text!)
+            
+        
         let storyBoard  = UIStoryboard(name: "Main", bundle: nil)
         let Feature = storyBoard.instantiateViewController(withIdentifier: "Feature") as! FeaturedViewController
         self.navigationController?.pushViewController(Feature, animated: true)
@@ -82,6 +87,7 @@ class CheckOutViewController: UIViewController, UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range:NSRange,replacementString string: String )-> Bool {
         let allowedCharaters = "1234567890"
         let allowedCharacterSet = CharacterSet(charactersIn: allowedCharaters)

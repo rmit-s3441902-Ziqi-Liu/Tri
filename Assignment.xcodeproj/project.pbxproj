@@ -18,6 +18,10 @@
 		80358F5B214B88A20021BAF2 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80358F5A214B88A20021BAF2 /* TimeTableViewCell.swift */; };
 		80358F5D214B8EB30021BAF2 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80358F5C214B8EB30021BAF2 /* CheckOutViewController.swift */; };
 		DD8B90C0214650EF003CA26A /* ComingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B90BF214650EF003CA26A /* ComingCollectionViewCell.swift */; };
+		DD9EF8772161DCBA006D9FE6 /* BookingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9EF8752161DCBA006D9FE6 /* BookingModel.xcdatamodeld */; };
+		DD9EF87A2161DFBF006D9FE6 /* BookingTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EF8782161DFBF006D9FE6 /* BookingTicket+CoreDataClass.swift */; };
+		DD9EF87B2161DFBF006D9FE6 /* BookingTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EF8792161DFBF006D9FE6 /* BookingTicket+CoreDataProperties.swift */; };
+		DD9EF87D2161E1F7006D9FE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EF87C2161E1F7006D9FE6 /* Model.swift */; };
 		DDA57B48214676F000DBBDD8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA57B47214676F000DBBDD8 /* ProfileTableViewCell.swift */; };
 		DDAE523221463B6A005F079C /* NowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE523121463B6A005F079C /* NowCollectionViewCell.swift */; };
 		DDB486F521466B3800E7C9A4 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB486F421466B3800E7C9A4 /* MovieListTableViewCell.swift */; };
@@ -59,6 +63,10 @@
 		80358F5A214B88A20021BAF2 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		80358F5C214B8EB30021BAF2 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		DD8B90BF214650EF003CA26A /* ComingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD9EF8762161DCBA006D9FE6 /* BookingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookingModel.xcdatamodel; sourceTree = "<group>"; };
+		DD9EF8782161DFBF006D9FE6 /* BookingTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookingTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD9EF8792161DFBF006D9FE6 /* BookingTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookingTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD9EF87C2161E1F7006D9FE6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DDA57B47214676F000DBBDD8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DDAE523121463B6A005F079C /* NowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDB486F421466B3800E7C9A4 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,8 +134,11 @@
 		80093EA1214BB88300564D09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD9EF8792161DFBF006D9FE6 /* BookingTicket+CoreDataProperties.swift */,
+				DD9EF8782161DFBF006D9FE6 /* BookingTicket+CoreDataClass.swift */,
 				57DDD38D214D0702001ECEA1 /* Movie.swift */,
 				57DDD38F214D0723001ECEA1 /* Booking.swift */,
+				DD9EF87C2161E1F7006D9FE6 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 				DDD65A0F2146079D00B0A3C3 /* AppDelegate.swift */,
 				DDD65A162146079D00B0A3C3 /* Assets.xcassets */,
 				DDD65A1B2146079D00B0A3C3 /* Info.plist */,
+				DD9EF8752161DCBA006D9FE6 /* BookingModel.xcdatamodeld */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -315,11 +327,15 @@
 				57DDD38E214D0702001ECEA1 /* Movie.swift in Sources */,
 				57C87924214E49D600A95BEA /* MyBookingTableViewCell.swift in Sources */,
 				DDD65A402146084300B0A3C3 /* BookingViewController.swift in Sources */,
+				DD9EF8772161DCBA006D9FE6 /* BookingModel.xcdatamodeld in Sources */,
+				DD9EF87A2161DFBF006D9FE6 /* BookingTicket+CoreDataClass.swift in Sources */,
 				80358F59214B87E90021BAF2 /* TimeViewController.swift in Sources */,
+				DD9EF87D2161E1F7006D9FE6 /* Model.swift in Sources */,
 				DDB486F521466B3800E7C9A4 /* MovieListTableViewCell.swift in Sources */,
 				80358F57214B86360021BAF2 /* LocationTableViewCell.swift in Sources */,
 				80358F5B214B88A20021BAF2 /* TimeTableViewCell.swift in Sources */,
 				DD8B90C0214650EF003CA26A /* ComingCollectionViewCell.swift in Sources */,
+				DD9EF87B2161DFBF006D9FE6 /* BookingTicket+CoreDataProperties.swift in Sources */,
 				DDD65A102146079D00B0A3C3 /* AppDelegate.swift in Sources */,
 				DDAE523221463B6A005F079C /* NowCollectionViewCell.swift in Sources */,
 				571E5FCB214CEAB800D4AE98 /* RegisterPageViewController.swift in Sources */,
@@ -608,6 +624,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD9EF8752161DCBA006D9FE6 /* BookingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD9EF8762161DCBA006D9FE6 /* BookingModel.xcdatamodel */,
+			);
+			currentVersion = DD9EF8762161DCBA006D9FE6 /* BookingModel.xcdatamodel */;
+			path = BookingModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DDD65A042146079D00B0A3C3 /* Project object */;
 }
